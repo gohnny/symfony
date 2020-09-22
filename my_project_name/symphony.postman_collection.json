@@ -1,0 +1,166 @@
+{
+  "info": {
+    "_postman_id": "e89d338a-6517-48b7-8645-93b6586e5515",
+    "name": "symphony",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GetAllUsers",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://0.0.0.0:9030/users",
+          "protocol": "http",
+          "host": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "port": "9030",
+          "path": [
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetUserById",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://0.0.0.0:9030/users/1",
+          "protocol": "http",
+          "host": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "port": "9030",
+          "path": [
+            "users",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update User",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"John\",\n    \"email\": \"email@email.com\",\n    \"password\": \"22222\"\n}"
+        },
+        "url": {
+          "raw": "http://0.0.0.0:9030/users/1",
+          "protocol": "http",
+          "host": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "port": "9030",
+          "path": [
+            "users",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DeleteUser",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://0.0.0.0:9030/users/3",
+          "protocol": "http",
+          "host": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "port": "9030",
+          "path": [
+            "users",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "CreateUser",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Ivan\",\n    \"email\": \"email@email.com\",\n    \"password\": \"11111\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://0.0.0.0:9030/users",
+          "protocol": "http",
+          "host": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "port": "9030",
+          "path": [
+            "users"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
